@@ -7,62 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8179977A175394DB00D79379 /* LiveLocateAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */; };
+		8179977B175394DB00D79379 /* LiveLocateMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */; };
+		8179977C175394DB00D79379 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81799776175394DB00D79379 /* ColorUtils.m */; };
+		8179977D175394DB00D79379 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 81799778175394DB00D79379 /* Language.m */; };
+		81799786175394F300D79379 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81799781175394F300D79379 /* InfoPlist.strings */; };
+		81799787175394F300D79379 /* LiveLocate 1-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81799783175394F300D79379 /* LiveLocate 1-Info.plist */; };
+		81799788175394F300D79379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81799785175394F300D79379 /* main.m */; };
+		81799795175394FA00D79379 /* bar_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 8179978C175394FA00D79379 /* bar_Background.png */; };
+		81799796175394FA00D79379 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8179978D175394FA00D79379 /* Default-568h@2x.png */; };
+		81799797175394FA00D79379 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8179978E175394FA00D79379 /* Default.png */; };
+		81799798175394FA00D79379 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8179978F175394FA00D79379 /* Default@2x.png */; };
+		81799799175394FA00D79379 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 81799790175394FA00D79379 /* list.png */; };
+		8179979A175394FA00D79379 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81799791175394FA00D79379 /* list@2x.png */; };
+		8179979B175394FA00D79379 /* sample_image_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81799792175394FA00D79379 /* sample_image_cover.jpg */; };
+		8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81799793175394FA00D79379 /* MainStoryboard.storyboard */; };
 		81F07B441726882700AD4743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B431726882700AD4743 /* UIKit.framework */; };
 		81F07B461726882700AD4743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B451726882700AD4743 /* Foundation.framework */; };
 		81F07B481726882700AD4743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B471726882700AD4743 /* CoreGraphics.framework */; };
-		81F07B4E1726882700AD4743 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B4C1726882700AD4743 /* InfoPlist.strings */; };
-		81F07B501726882700AD4743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B4F1726882700AD4743 /* main.m */; };
-		81F07B541726882700AD4743 /* LiveLocateAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B531726882700AD4743 /* LiveLocateAppDelegate.m */; };
-		81F07B561726882700AD4743 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B551726882700AD4743 /* Default.png */; };
-		81F07B581726882700AD4743 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B571726882700AD4743 /* Default@2x.png */; };
-		81F07B5A1726882700AD4743 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B591726882700AD4743 /* Default-568h@2x.png */; };
-		81F07B5D1726882700AD4743 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B5B1726882700AD4743 /* MainStoryboard.storyboard */; };
-		81F07B6D172689B900AD4743 /* ParentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B6A172689B900AD4743 /* ParentViewController.m */; };
-		81F07B6E172689B900AD4743 /* ModelObjectInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B6C172689B900AD4743 /* ModelObjectInterface.m */; };
-		81F07B7417268BC100AD4743 /* LiveLocateMainPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B7317268BC100AD4743 /* LiveLocateMainPageModel.m */; };
-		81F07B7717268D2600AD4743 /* LiveLocateMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B7617268D2600AD4743 /* LiveLocateMainPageViewController.m */; };
-		81F07B7D17268E3400AD4743 /* Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B7C17268E3400AD4743 /* Language.m */; };
-		81F07B8017268E3F00AD4743 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81F07B7F17268E3F00AD4743 /* ColorUtils.m */; };
 		81F07B821726AA7500AD4743 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B811726AA7500AD4743 /* CoreData.framework */; };
-		81F07B841726B2D600AD4743 /* bar_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B831726B2D600AD4743 /* bar_Background.png */; };
-		81F07B881726B50600AD4743 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B861726B50500AD4743 /* list.png */; };
-		81F07B891726B50600AD4743 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B871726B50600AD4743 /* list@2x.png */; };
-		81F07B8B1726BE8800AD4743 /* sample_image_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81F07B8A1726BE8800AD4743 /* sample_image_cover.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8179976C175394DB00D79379 /* LiveLocateAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateAppDelegate.h; sourceTree = "<group>"; };
+		8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateAppDelegate.m; sourceTree = "<group>"; };
+		8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateMainPageViewController.h; sourceTree = "<group>"; };
+		81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateMainPageViewController.m; sourceTree = "<group>"; };
+		81799773175394DB00D79379 /* ColorDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDictionary.h; sourceTree = "<group>"; };
+		81799775175394DB00D79379 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
+		81799776175394DB00D79379 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
+		81799777175394DB00D79379 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
+		81799778175394DB00D79379 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
+		81799782175394F300D79379 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		81799783175394F300D79379 /* LiveLocate 1-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LiveLocate 1-Info.plist"; sourceTree = "<group>"; };
+		81799784175394F300D79379 /* LiveLocate 1-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LiveLocate 1-Prefix.pch"; sourceTree = "<group>"; };
+		81799785175394F300D79379 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8179978C175394FA00D79379 /* bar_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_Background.png; sourceTree = "<group>"; };
+		8179978D175394FA00D79379 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8179978E175394FA00D79379 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		8179978F175394FA00D79379 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		81799790175394FA00D79379 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		81799791175394FA00D79379 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		81799792175394FA00D79379 /* sample_image_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_image_cover.jpg; sourceTree = "<group>"; };
+		81799793175394FA00D79379 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		81F07B401726882700AD4743 /* LiveLocate 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveLocate 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F07B431726882700AD4743 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F07B451726882700AD4743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		81F07B471726882700AD4743 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		81F07B4B1726882700AD4743 /* LiveLocate 1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LiveLocate 1-Info.plist"; sourceTree = "<group>"; };
-		81F07B4D1726882700AD4743 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		81F07B4F1726882700AD4743 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		81F07B511726882700AD4743 /* LiveLocate 1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LiveLocate 1-Prefix.pch"; sourceTree = "<group>"; };
-		81F07B521726882700AD4743 /* LiveLocateAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveLocateAppDelegate.h; sourceTree = "<group>"; };
-		81F07B531726882700AD4743 /* LiveLocateAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LiveLocateAppDelegate.m; sourceTree = "<group>"; };
-		81F07B551726882700AD4743 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		81F07B571726882700AD4743 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		81F07B591726882700AD4743 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		81F07B5C1726882700AD4743 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		81F07B69172689B900AD4743 /* ParentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentViewController.h; sourceTree = "<group>"; };
-		81F07B6A172689B900AD4743 /* ParentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentViewController.m; sourceTree = "<group>"; };
-		81F07B6B172689B900AD4743 /* ModelObjectInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelObjectInterface.h; sourceTree = "<group>"; };
-		81F07B6C172689B900AD4743 /* ModelObjectInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelObjectInterface.m; sourceTree = "<group>"; };
-		81F07B7217268BC100AD4743 /* LiveLocateMainPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateMainPageModel.h; sourceTree = "<group>"; };
-		81F07B7317268BC100AD4743 /* LiveLocateMainPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateMainPageModel.m; sourceTree = "<group>"; };
-		81F07B7517268D2600AD4743 /* LiveLocateMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateMainPageViewController.h; sourceTree = "<group>"; };
-		81F07B7617268D2600AD4743 /* LiveLocateMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateMainPageViewController.m; sourceTree = "<group>"; };
-		81F07B7917268DDC00AD4743 /* ColorDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDictionary.h; sourceTree = "<group>"; };
-		81F07B7B17268E3400AD4743 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
-		81F07B7C17268E3400AD4743 /* Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Language.m; sourceTree = "<group>"; };
-		81F07B7E17268E3F00AD4743 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
-		81F07B7F17268E3F00AD4743 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
 		81F07B811726AA7500AD4743 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		81F07B831726B2D600AD4743 /* bar_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_Background.png; sourceTree = "<group>"; };
-		81F07B861726B50500AD4743 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
-		81F07B871726B50600AD4743 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
-		81F07B8A1726BE8800AD4743 /* sample_image_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_image_cover.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +72,135 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8179976A175394DB00D79379 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8179976B175394DB00D79379 /* AppDelegate */,
+				8179976E175394DB00D79379 /* Controllers */,
+				81799771175394DB00D79379 /* Helpers */,
+				81799779175394DB00D79379 /* Models */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8179976B175394DB00D79379 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				8179976C175394DB00D79379 /* LiveLocateAppDelegate.h */,
+				8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		8179976E175394DB00D79379 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */,
+				81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		81799771175394DB00D79379 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81799772175394DB00D79379 /* Constants File */,
+				81799774175394DB00D79379 /* Library */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		81799772175394DB00D79379 /* Constants File */ = {
+			isa = PBXGroup;
+			children = (
+				81799773175394DB00D79379 /* ColorDictionary.h */,
+			);
+			path = "Constants File";
+			sourceTree = "<group>";
+		};
+		81799774175394DB00D79379 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				81799775175394DB00D79379 /* ColorUtils.h */,
+				81799776175394DB00D79379 /* ColorUtils.m */,
+				81799777175394DB00D79379 /* Language.h */,
+				81799778175394DB00D79379 /* Language.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		81799779175394DB00D79379 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8179977E175394EA00D79379 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8179977F175394EA00D79379 /* Entity */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8179977F175394EA00D79379 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		81799780175394F300D79379 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				81799781175394F300D79379 /* InfoPlist.strings */,
+				81799783175394F300D79379 /* LiveLocate 1-Info.plist */,
+				81799784175394F300D79379 /* LiveLocate 1-Prefix.pch */,
+				81799785175394F300D79379 /* main.m */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		81799789175394FA00D79379 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8179978A175394FA00D79379 /* Fonts */,
+				8179978B175394FA00D79379 /* Images */,
+				81799793175394FA00D79379 /* MainStoryboard.storyboard */,
+				81799794175394FA00D79379 /* NIBs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8179978A175394FA00D79379 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8179978B175394FA00D79379 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8179978C175394FA00D79379 /* bar_Background.png */,
+				8179978D175394FA00D79379 /* Default-568h@2x.png */,
+				8179978E175394FA00D79379 /* Default.png */,
+				8179978F175394FA00D79379 /* Default@2x.png */,
+				81799790175394FA00D79379 /* list.png */,
+				81799791175394FA00D79379 /* list@2x.png */,
+				81799792175394FA00D79379 /* sample_image_cover.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		81799794175394FA00D79379 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
 		81F07B371726882700AD4743 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +221,7 @@
 		81F07B421726882700AD4743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				81F07B811726AA7500AD4743 /* CoreData.framework */,
 				81F07B431726882700AD4743 /* UIKit.framework */,
 				81F07B451726882700AD4743 /* Foundation.framework */,
 				81F07B471726882700AD4743 /* CoreGraphics.framework */,
@@ -110,93 +232,12 @@
 		81F07B491726882700AD4743 /* LiveLocate 1 */ = {
 			isa = PBXGroup;
 			children = (
-				81F07B851726B2D900AD4743 /* Picture */,
-				81F07B7A17268E1F00AD4743 /* Library File */,
-				81F07B7817268DA800AD4743 /* Util File */,
-				81F07B7117268A1200AD4743 /* Application File */,
-				81F07B70172689FD00AD4743 /* Main Page */,
-				81F07B6F172689E000AD4743 /* Interface File */,
-				81F07B4A1726882700AD4743 /* Supporting Files */,
+				81799789175394FA00D79379 /* Resources */,
+				81799780175394F300D79379 /* Other Sources */,
+				8179977E175394EA00D79379 /* Database */,
+				8179976A175394DB00D79379 /* Classes */,
 			);
 			path = "LiveLocate 1";
-			sourceTree = "<group>";
-		};
-		81F07B4A1726882700AD4743 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B4B1726882700AD4743 /* LiveLocate 1-Info.plist */,
-				81F07B4C1726882700AD4743 /* InfoPlist.strings */,
-				81F07B4F1726882700AD4743 /* main.m */,
-				81F07B511726882700AD4743 /* LiveLocate 1-Prefix.pch */,
-				81F07B551726882700AD4743 /* Default.png */,
-				81F07B571726882700AD4743 /* Default@2x.png */,
-				81F07B591726882700AD4743 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		81F07B6F172689E000AD4743 /* Interface File */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B69172689B900AD4743 /* ParentViewController.h */,
-				81F07B6A172689B900AD4743 /* ParentViewController.m */,
-				81F07B6B172689B900AD4743 /* ModelObjectInterface.h */,
-				81F07B6C172689B900AD4743 /* ModelObjectInterface.m */,
-			);
-			name = "Interface File";
-			sourceTree = "<group>";
-		};
-		81F07B70172689FD00AD4743 /* Main Page */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B7217268BC100AD4743 /* LiveLocateMainPageModel.h */,
-				81F07B7317268BC100AD4743 /* LiveLocateMainPageModel.m */,
-				81F07B7517268D2600AD4743 /* LiveLocateMainPageViewController.h */,
-				81F07B7617268D2600AD4743 /* LiveLocateMainPageViewController.m */,
-			);
-			name = "Main Page";
-			sourceTree = "<group>";
-		};
-		81F07B7117268A1200AD4743 /* Application File */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B521726882700AD4743 /* LiveLocateAppDelegate.h */,
-				81F07B531726882700AD4743 /* LiveLocateAppDelegate.m */,
-				81F07B5B1726882700AD4743 /* MainStoryboard.storyboard */,
-			);
-			name = "Application File";
-			sourceTree = "<group>";
-		};
-		81F07B7817268DA800AD4743 /* Util File */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B7917268DDC00AD4743 /* ColorDictionary.h */,
-			);
-			name = "Util File";
-			sourceTree = "<group>";
-		};
-		81F07B7A17268E1F00AD4743 /* Library File */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B811726AA7500AD4743 /* CoreData.framework */,
-				81F07B7E17268E3F00AD4743 /* ColorUtils.h */,
-				81F07B7F17268E3F00AD4743 /* ColorUtils.m */,
-				81F07B7B17268E3400AD4743 /* Language.h */,
-				81F07B7C17268E3400AD4743 /* Language.m */,
-			);
-			name = "Library File";
-			sourceTree = "<group>";
-		};
-		81F07B851726B2D900AD4743 /* Picture */ = {
-			isa = PBXGroup;
-			children = (
-				81F07B8A1726BE8800AD4743 /* sample_image_cover.jpg */,
-				81F07B861726B50500AD4743 /* list.png */,
-				81F07B871726B50600AD4743 /* list@2x.png */,
-				81F07B831726B2D600AD4743 /* bar_Background.png */,
-			);
-			name = Picture;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,15 +292,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F07B4E1726882700AD4743 /* InfoPlist.strings in Resources */,
-				81F07B561726882700AD4743 /* Default.png in Resources */,
-				81F07B581726882700AD4743 /* Default@2x.png in Resources */,
-				81F07B5A1726882700AD4743 /* Default-568h@2x.png in Resources */,
-				81F07B5D1726882700AD4743 /* MainStoryboard.storyboard in Resources */,
-				81F07B841726B2D600AD4743 /* bar_Background.png in Resources */,
-				81F07B881726B50600AD4743 /* list.png in Resources */,
-				81F07B891726B50600AD4743 /* list@2x.png in Resources */,
-				81F07B8B1726BE8800AD4743 /* sample_image_cover.jpg in Resources */,
+				81799786175394F300D79379 /* InfoPlist.strings in Resources */,
+				81799787175394F300D79379 /* LiveLocate 1-Info.plist in Resources */,
+				81799795175394FA00D79379 /* bar_Background.png in Resources */,
+				81799796175394FA00D79379 /* Default-568h@2x.png in Resources */,
+				81799797175394FA00D79379 /* Default.png in Resources */,
+				81799798175394FA00D79379 /* Default@2x.png in Resources */,
+				81799799175394FA00D79379 /* list.png in Resources */,
+				8179979A175394FA00D79379 /* list@2x.png in Resources */,
+				8179979B175394FA00D79379 /* sample_image_cover.jpg in Resources */,
+				8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,34 +312,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81F07B501726882700AD4743 /* main.m in Sources */,
-				81F07B541726882700AD4743 /* LiveLocateAppDelegate.m in Sources */,
-				81F07B6D172689B900AD4743 /* ParentViewController.m in Sources */,
-				81F07B6E172689B900AD4743 /* ModelObjectInterface.m in Sources */,
-				81F07B7417268BC100AD4743 /* LiveLocateMainPageModel.m in Sources */,
-				81F07B7717268D2600AD4743 /* LiveLocateMainPageViewController.m in Sources */,
-				81F07B7D17268E3400AD4743 /* Language.m in Sources */,
-				81F07B8017268E3F00AD4743 /* ColorUtils.m in Sources */,
+				8179977A175394DB00D79379 /* LiveLocateAppDelegate.m in Sources */,
+				8179977B175394DB00D79379 /* LiveLocateMainPageViewController.m in Sources */,
+				8179977C175394DB00D79379 /* ColorUtils.m in Sources */,
+				8179977D175394DB00D79379 /* Language.m in Sources */,
+				81799788175394F300D79379 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		81F07B4C1726882700AD4743 /* InfoPlist.strings */ = {
+		81799781175394F300D79379 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				81F07B4D1726882700AD4743 /* en */,
+				81799782175394F300D79379 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		81F07B5B1726882700AD4743 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81F07B5C1726882700AD4743 /* en */,
-			);
-			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,6 +431,7 @@
 				81F07B651726882700AD4743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
