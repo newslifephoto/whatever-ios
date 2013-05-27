@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModelInterface : UIApplication
+@interface ModelInterface : NSObject
 
 @end

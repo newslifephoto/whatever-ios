@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ParentViewController.h"
+#import "ControllerInterface.h"
 
-@interface LiveLocateMainPageViewController : UIViewController <UITableViewDataSource,UITableViewDataSource>
+@interface LiveLocateMainPageViewController : ControllerInterface <UITableViewDataSource,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *upcommingTableView;
 @property (weak, nonatomic) IBOutlet UITableView *coverTableView;
 

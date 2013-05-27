@@ -22,8 +22,8 @@
 		8179979A175394FA00D79379 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 81799791175394FA00D79379 /* list@2x.png */; };
 		8179979B175394FA00D79379 /* sample_image_cover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81799792175394FA00D79379 /* sample_image_cover.jpg */; };
 		8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81799793175394FA00D79379 /* MainStoryboard.storyboard */; };
-		8179979F175395C700D79379 /* ControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179979E175395C700D79379 /* ControllerInterface.m */; };
 		817997A2175395DD00D79379 /* ModelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A1175395DD00D79379 /* ModelInterface.m */; };
+		817997A51753992800D79379 /* ControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A41753992800D79379 /* ControllerInterface.m */; };
 		81F07B441726882700AD4743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B431726882700AD4743 /* UIKit.framework */; };
 		81F07B461726882700AD4743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B451726882700AD4743 /* Foundation.framework */; };
 		81F07B481726882700AD4743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B471726882700AD4743 /* CoreGraphics.framework */; };
@@ -52,10 +52,10 @@
 		81799791175394FA00D79379 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
 		81799792175394FA00D79379 /* sample_image_cover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sample_image_cover.jpg; sourceTree = "<group>"; };
 		81799793175394FA00D79379 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		8179979D175395C700D79379 /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
-		8179979E175395C700D79379 /* ControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInterface.m; sourceTree = "<group>"; };
 		817997A0175395DD00D79379 /* ModelInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelInterface.h; sourceTree = "<group>"; };
 		817997A1175395DD00D79379 /* ModelInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInterface.m; sourceTree = "<group>"; };
+		817997A31753992700D79379 /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
+		817997A41753992800D79379 /* ControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInterface.m; sourceTree = "<group>"; };
 		81F07B401726882700AD4743 /* LiveLocate 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveLocate 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F07B431726882700AD4743 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F07B451726882700AD4743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,8 +103,8 @@
 			children = (
 				8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */,
 				81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */,
-				8179979D175395C700D79379 /* ControllerInterface.h */,
-				8179979E175395C700D79379 /* ControllerInterface.m */,
+				817997A31753992700D79379 /* ControllerInterface.h */,
+				817997A41753992800D79379 /* ControllerInterface.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -327,8 +327,8 @@
 				8179977C175394DB00D79379 /* ColorUtils.m in Sources */,
 				8179977D175394DB00D79379 /* Language.m in Sources */,
 				81799788175394F300D79379 /* main.m in Sources */,
-				8179979F175395C700D79379 /* ControllerInterface.m in Sources */,
 				817997A2175395DD00D79379 /* ModelInterface.m in Sources */,
+				817997A51753992800D79379 /* ControllerInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,8 +406,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LiveLocate 1/LiveLocate 1-Prefix.pch";
-				INFOPLIST_FILE = "LiveLocate 1/LiveLocate 1-Info.plist";
+				GCC_PREFIX_HEADER = "LiveLocate 1/Other Sources/LiveLocate 1-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/LiveLocate 1/Other Sources/LiveLocate 1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -417,8 +417,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "LiveLocate 1/LiveLocate 1-Prefix.pch";
-				INFOPLIST_FILE = "LiveLocate 1/LiveLocate 1-Info.plist";
+				GCC_PREFIX_HEADER = "LiveLocate 1/Other Sources/LiveLocate 1-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/LiveLocate 1/Other Sources/LiveLocate 1-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

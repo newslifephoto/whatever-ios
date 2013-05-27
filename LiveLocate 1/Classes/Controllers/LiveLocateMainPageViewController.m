@@ -30,13 +30,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    UIImage* imageForLeftBarButton = [UIImage imageNamed:@"list"];
-    CGRect frameLeftBarButton = CGRectMake(0, 0, imageForLeftBarButton.size.width, imageForLeftBarButton.size.height);
-    UIButton* leftBarButton = [[UIButton alloc] initWithFrame:frameLeftBarButton];
-    [leftBarButton setBackgroundImage:imageForLeftBarButton forState:UIControlStateNormal];
-    [leftBarButton setShowsTouchWhenHighlighted:YES];
-    UIBarButtonItem* leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBarButton];
-    [self.navigationItem setLeftBarButtonItem:leftBarButtonItem];
+
 }
 
 - (void)didReceiveMemoryWarning
