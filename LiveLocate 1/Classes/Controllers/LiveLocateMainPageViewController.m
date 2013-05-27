@@ -15,8 +15,7 @@
 @implementation LiveLocateMainPageViewController
 
 
-#pragma mark -
-#pragma mark Class Method
+#pragma mark - Class Method
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

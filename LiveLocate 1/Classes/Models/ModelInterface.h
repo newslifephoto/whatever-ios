@@ -10,4 +10,7 @@
 
 @interface ModelInterface : NSObject
 
+
+-(void)requestToServerWithRpDic:(NSMutableDictionary *)rpDict andRequestName:(NSString *)requestName_ andProcessKey:(NSString *)pk;
+
 @end

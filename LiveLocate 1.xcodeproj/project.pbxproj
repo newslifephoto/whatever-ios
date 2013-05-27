@@ -24,6 +24,7 @@
 		8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81799793175394FA00D79379 /* MainStoryboard.storyboard */; };
 		817997A2175395DD00D79379 /* ModelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A1175395DD00D79379 /* ModelInterface.m */; };
 		817997A51753992800D79379 /* ControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A41753992800D79379 /* ControllerInterface.m */; };
+		817997A917539EB200D79379 /* DateTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A817539EB200D79379 /* DateTimeManager.m */; };
 		81F07B441726882700AD4743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B431726882700AD4743 /* UIKit.framework */; };
 		81F07B461726882700AD4743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B451726882700AD4743 /* Foundation.framework */; };
 		81F07B481726882700AD4743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B471726882700AD4743 /* CoreGraphics.framework */; };
@@ -56,6 +57,8 @@
 		817997A1175395DD00D79379 /* ModelInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInterface.m; sourceTree = "<group>"; };
 		817997A31753992700D79379 /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
 		817997A41753992800D79379 /* ControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInterface.m; sourceTree = "<group>"; };
+		817997A717539EB200D79379 /* DateTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeManager.h; sourceTree = "<group>"; };
+		817997A817539EB200D79379 /* DateTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeManager.m; sourceTree = "<group>"; };
 		81F07B401726882700AD4743 /* LiveLocate 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveLocate 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F07B431726882700AD4743 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F07B451726882700AD4743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -101,8 +104,7 @@
 		8179976E175394DB00D79379 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */,
-				81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */,
+				817997AA17539EC300D79379 /* Main Page */,
 				817997A31753992700D79379 /* ControllerInterface.h */,
 				817997A41753992800D79379 /* ControllerInterface.m */,
 			);
@@ -112,6 +114,7 @@
 		81799771175394DB00D79379 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				817997A617539E9500D79379 /* Managers */,
 				81799772175394DB00D79379 /* Constants File */,
 				81799774175394DB00D79379 /* Library */,
 			);
@@ -209,6 +212,24 @@
 			children = (
 			);
 			path = NIBs;
+			sourceTree = "<group>";
+		};
+		817997A617539E9500D79379 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				817997A717539EB200D79379 /* DateTimeManager.h */,
+				817997A817539EB200D79379 /* DateTimeManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		817997AA17539EC300D79379 /* Main Page */ = {
+			isa = PBXGroup;
+			children = (
+				8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */,
+				81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */,
+			);
+			name = "Main Page";
 			sourceTree = "<group>";
 		};
 		81F07B371726882700AD4743 = {
@@ -329,6 +350,7 @@
 				81799788175394F300D79379 /* main.m in Sources */,
 				817997A2175395DD00D79379 /* ModelInterface.m in Sources */,
 				817997A51753992800D79379 /* ControllerInterface.m in Sources */,
+				817997A917539EB200D79379 /* DateTimeManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
