@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CN0-3c-rXM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Live Locate Main Page View Controller - LiveLocate-->
+        <scene sceneID="Ifp-Yf-bUO">
+            <objects>
+                <viewController id="O2r-Qk-IbH" customClass="LiveLocateMainPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XMQ-uj-rlJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Gkk-hx-hDF">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="290" id="bvf-1c-lob"/>
+                                </constraints>
+                            </tableView>
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bbr-yD-6y6">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="0UG-82-Efh"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gkk-hx-hDF" firstAttribute="leading" secondItem="XMQ-uj-rlJ" secondAttribute="leading" type="default" id="Bht-cP-3dp"/>
+                            <constraint firstItem="Bbr-yD-6y6" firstAttribute="top" secondItem="XMQ-uj-rlJ" secondAttribute="top" type="default" id="EOX-lz-lL7"/>
+                            <constraint firstItem="Bbr-yD-6y6" firstAttribute="trailing" secondItem="XMQ-uj-rlJ" secondAttribute="trailing" type="default" id="JHr-BI-52I"/>
+                            <constraint firstItem="Gkk-hx-hDF" firstAttribute="bottom" secondItem="XMQ-uj-rlJ" secondAttribute="bottom" type="default" id="U82-SA-g2L"/>
+                            <constraint firstItem="Gkk-hx-hDF" firstAttribute="trailing" secondItem="XMQ-uj-rlJ" secondAttribute="trailing" type="default" id="gyD-OX-cPO"/>
+                            <constraint firstItem="Bbr-yD-6y6" firstAttribute="leading" secondItem="XMQ-uj-rlJ" secondAttribute="leading" type="default" id="mvR-eo-Hk9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LiveLocate" id="GPY-L4-Ogf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="coverTableView" destination="Bbr-yD-6y6" id="mlU-1w-SvL"/>
+                        <outlet property="upcommingTableView" destination="Gkk-hx-hDF" id="1ru-BW-XZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k3S-gb-7Nj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jL3-e7-ZjN">
+            <objects>
+                <navigationController id="CN0-3c-rXM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yGQ-9R-i0X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O2r-Qk-IbH" kind="relationship" relationship="rootViewController" id="lRN-y6-f0J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="71e-fr-NZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="83"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="LiveLocateMainPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LiveLocateMainPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="coverTableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="upcommingTableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
