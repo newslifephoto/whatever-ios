@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81299D9E175623E500B697D5 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81299D9D175623E500B697D5 /* ConnectionManager.m */; };
+		81299DBB175628BF00B697D5 /* ConnectionConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81299DBA175628BF00B697D5 /* ConnectionConstants.m */; };
+		81299DBE17562D9300B697D5 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81299DBD17562D9300B697D5 /* UserDefaultsManager.m */; };
 		8179977A175394DB00D79379 /* LiveLocateAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */; };
 		8179977B175394DB00D79379 /* LiveLocateMainPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */; };
 		8179977C175394DB00D79379 /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 81799776175394DB00D79379 /* ColorUtils.m */; };
@@ -32,6 +35,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81299D9C175623E500B697D5 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		81299D9D175623E500B697D5 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		81299DB9175628BF00B697D5 /* ConnectionConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionConstants.h; sourceTree = "<group>"; };
+		81299DBA175628BF00B697D5 /* ConnectionConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionConstants.m; sourceTree = "<group>"; };
+		81299DBC17562D9200B697D5 /* UserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
+		81299DBD17562D9300B697D5 /* UserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
 		8179976C175394DB00D79379 /* LiveLocateAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateAppDelegate.h; sourceTree = "<group>"; };
 		8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateAppDelegate.m; sourceTree = "<group>"; };
 		8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateMainPageViewController.h; sourceTree = "<group>"; };
@@ -125,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				81799773175394DB00D79379 /* ColorDictionary.h */,
+				81299DB9175628BF00B697D5 /* ConnectionConstants.h */,
+				81299DBA175628BF00B697D5 /* ConnectionConstants.m */,
 			);
 			path = "Constants File";
 			sourceTree = "<group>";
@@ -219,6 +230,10 @@
 			children = (
 				817997A717539EB200D79379 /* DateTimeManager.h */,
 				817997A817539EB200D79379 /* DateTimeManager.m */,
+				81299D9C175623E500B697D5 /* ConnectionManager.h */,
+				81299D9D175623E500B697D5 /* ConnectionManager.m */,
+				81299DBC17562D9200B697D5 /* UserDefaultsManager.h */,
+				81299DBD17562D9300B697D5 /* UserDefaultsManager.m */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -351,6 +366,9 @@
 				817997A2175395DD00D79379 /* ModelInterface.m in Sources */,
 				817997A51753992800D79379 /* ControllerInterface.m in Sources */,
 				817997A917539EB200D79379 /* DateTimeManager.m in Sources */,
+				81299D9E175623E500B697D5 /* ConnectionManager.m in Sources */,
+				81299DBB175628BF00B697D5 /* ConnectionConstants.m in Sources */,
+				81299DBE17562D9300B697D5 /* UserDefaultsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
