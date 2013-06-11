@@ -7,19 +7,20 @@
 //
 
 #import "LiveLocateAppDelegate.h"
+#import "ColorUtils.h"
 
 @implementation LiveLocateAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UIImage *imgBackground = [[UIImage imageNamed:@"bar_Background.png"]resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [[UINavigationBar appearance] setBackgroundImage:imgBackground forBarMetrics:UIBarMetricsDefault];
-    UIImage *imgShadow = [[UIImage imageNamed:@"shadow_bar.png"]resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
-    
-    [[UINavigationBar appearance] setShadowImage:imgShadow];
-    
+//    UIImage *imgBackground = [[UIImage imageNamed:@"bar_Background.png"]resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [[UINavigationBar appearance] setBackgroundImage:imgBackground forBarMetrics:UIBarMetricsDefault];
+//    UIImage *imgShadow = [[UIImage imageNamed:@"shadow_bar.png"]resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
+//    [[UINavigationBar appearance] setBarStyle:UIBarStyleBlackTranslucent];
+//    
+//    [[UINavigationBar appearance] setShadowImage:imgShadow];
+    [[UINavigationBar appearance] setTintColor:[UIColor colorWithString:@"#e17818"]];
     
     return YES;
 }
