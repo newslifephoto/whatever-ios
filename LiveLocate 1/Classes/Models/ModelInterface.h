@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ConnectionManager.h"
+#import "DateTimeLanguageManager.h"
+#import "DatabaseManager.h"
 @interface ModelInterface : NSObject
 
-
--(void)requestToServerWithRpDic:(NSMutableDictionary *)rpDict andRequestName:(NSString *)requestName_ andProcessKey:(NSString *)pk;
+@property (nonatomic,strong) ConnectionManager * connectionManager;
+@property (nonatomic,strong) DateTimeLanguageManager * dateTimeLanguageManager;
+@property (nonatomic,strong) DatabaseManager * databaseManager;
 
 @end
+
