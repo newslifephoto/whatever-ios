@@ -8,10 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ConnectionDelegate 
+
+- (void)requestDidFinishLoadWithDataIn:(NSDictionary *)dataIn andRquestName:(NSString *)requestName andTransactionStatus:(BOOL)status;
+- (void)requestRequestTimeOutWithRquestName:(NSString *)requestName andRequestToolsIn:(NSMutableDictionary*)requestToolsIn;
+
+@end
+
 @interface ConnectionManager : NSObject
 
-
-// implemented
+@property (nonatomic,assign) id <ConnectionDelegate> delegate;
 -(void)requestToServerWithRpDic:(NSMutableDictionary *)rpDict andRequestName:(NSString *)requestName_ andProcessKey:(NSString *)pk;
 
 @end

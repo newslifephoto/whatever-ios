@@ -10,16 +10,22 @@
 
 @interface ModelInterface (Private)
 
-///// connection property
-
 
 
 @end
 
 @implementation ModelInterface
 
-#pragma mark - Connection Method
-
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        _connectionManager = [[ConnectionManager alloc] init];
+        _dateTimeLanguageManager = [[DateTimeLanguageManager alloc] init];
+        _databaseManager = [[DatabaseManager alloc] init];
+    }
+    return self;
+}
 
 
 

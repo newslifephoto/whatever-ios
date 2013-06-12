@@ -15,3 +15,6 @@ NSString * const kResponseData = @"responseData";
 NSString * const kResponseIn = @"responseIn";
 NSString * const kRequestName = @"responseName";
 NSString * const kUniqueID = @"uniqueID";
+NSString * const kRequestProcessStatus = @"IsSuccess";
+NSString * const kResponseResult = @"Data";
+NSString * const kResponseMessage = @"MSG";

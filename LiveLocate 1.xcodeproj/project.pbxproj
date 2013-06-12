@@ -27,7 +27,11 @@
 		8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81799793175394FA00D79379 /* MainStoryboard.storyboard */; };
 		817997A2175395DD00D79379 /* ModelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A1175395DD00D79379 /* ModelInterface.m */; };
 		817997A51753992800D79379 /* ControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A41753992800D79379 /* ControllerInterface.m */; };
-		817997A917539EB200D79379 /* DateTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A817539EB200D79379 /* DateTimeManager.m */; };
+		81E11A2C1768953A0037ED3A /* CodeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E11A2B1768953A0037ED3A /* CodeConstants.m */; };
+		81E11A2F176895C70037ED3A /* ColorCodeConsants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E11A2E176895C60037ED3A /* ColorCodeConsants.m */; };
+		81E11A35176896740037ED3A /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E11A34176896730037ED3A /* DatabaseManager.m */; };
+		81E11A38176896900037ED3A /* DateTimeLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E11A37176896900037ED3A /* DateTimeLanguageManager.m */; };
+		81E11A3B176897070037ED3A /* UserDefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E11A3A176897070037ED3A /* UserDefaultConstants.m */; };
 		81F07B441726882700AD4743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B431726882700AD4743 /* UIKit.framework */; };
 		81F07B461726882700AD4743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B451726882700AD4743 /* Foundation.framework */; };
 		81F07B481726882700AD4743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B471726882700AD4743 /* CoreGraphics.framework */; };
@@ -45,7 +49,6 @@
 		8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateAppDelegate.m; sourceTree = "<group>"; };
 		8179976F175394DB00D79379 /* LiveLocateMainPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateMainPageViewController.h; sourceTree = "<group>"; };
 		81799770175394DB00D79379 /* LiveLocateMainPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateMainPageViewController.m; sourceTree = "<group>"; };
-		81799773175394DB00D79379 /* ColorDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDictionary.h; sourceTree = "<group>"; };
 		81799775175394DB00D79379 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
 		81799776175394DB00D79379 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
 		81799777175394DB00D79379 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
@@ -66,8 +69,16 @@
 		817997A1175395DD00D79379 /* ModelInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInterface.m; sourceTree = "<group>"; };
 		817997A31753992700D79379 /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
 		817997A41753992800D79379 /* ControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInterface.m; sourceTree = "<group>"; };
-		817997A717539EB200D79379 /* DateTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeManager.h; sourceTree = "<group>"; };
-		817997A817539EB200D79379 /* DateTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeManager.m; sourceTree = "<group>"; };
+		81E11A2A1768953A0037ED3A /* CodeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeConstants.h; sourceTree = "<group>"; };
+		81E11A2B1768953A0037ED3A /* CodeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeConstants.m; sourceTree = "<group>"; };
+		81E11A2D176895C60037ED3A /* ColorCodeConsants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCodeConsants.h; sourceTree = "<group>"; };
+		81E11A2E176895C60037ED3A /* ColorCodeConsants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorCodeConsants.m; sourceTree = "<group>"; };
+		81E11A33176896730037ED3A /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		81E11A34176896730037ED3A /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		81E11A36176896900037ED3A /* DateTimeLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeLanguageManager.h; sourceTree = "<group>"; };
+		81E11A37176896900037ED3A /* DateTimeLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeLanguageManager.m; sourceTree = "<group>"; };
+		81E11A39176897060037ED3A /* UserDefaultConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultConstants.h; sourceTree = "<group>"; };
+		81E11A3A176897070037ED3A /* UserDefaultConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultConstants.m; sourceTree = "<group>"; };
 		81F07B401726882700AD4743 /* LiveLocate 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveLocate 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F07B431726882700AD4743 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F07B451726882700AD4743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,9 +144,14 @@
 		81799772175394DB00D79379 /* Constants File */ = {
 			isa = PBXGroup;
 			children = (
-				81799773175394DB00D79379 /* ColorDictionary.h */,
+				81E11A2A1768953A0037ED3A /* CodeConstants.h */,
+				81E11A2B1768953A0037ED3A /* CodeConstants.m */,
 				81299DB9175628BF00B697D5 /* ConnectionConstants.h */,
 				81299DBA175628BF00B697D5 /* ConnectionConstants.m */,
+				81E11A2D176895C60037ED3A /* ColorCodeConsants.h */,
+				81E11A2E176895C60037ED3A /* ColorCodeConsants.m */,
+				81E11A39176897060037ED3A /* UserDefaultConstants.h */,
+				81E11A3A176897070037ED3A /* UserDefaultConstants.m */,
 			);
 			path = "Constants File";
 			sourceTree = "<group>";
@@ -189,9 +205,9 @@
 		81799789175394FA00D79379 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				81799793175394FA00D79379 /* MainStoryboard.storyboard */,
 				8179978A175394FA00D79379 /* Fonts */,
 				8179978B175394FA00D79379 /* Images */,
-				81799793175394FA00D79379 /* MainStoryboard.storyboard */,
 				81799794175394FA00D79379 /* NIBs */,
 			);
 			path = Resources;
@@ -228,8 +244,10 @@
 		817997A617539E9500D79379 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				817997A717539EB200D79379 /* DateTimeManager.h */,
-				817997A817539EB200D79379 /* DateTimeManager.m */,
+				81E11A33176896730037ED3A /* DatabaseManager.h */,
+				81E11A34176896730037ED3A /* DatabaseManager.m */,
+				81E11A36176896900037ED3A /* DateTimeLanguageManager.h */,
+				81E11A37176896900037ED3A /* DateTimeLanguageManager.m */,
 				81299D9C175623E500B697D5 /* ConnectionManager.h */,
 				81299D9D175623E500B697D5 /* ConnectionManager.m */,
 				81299DBC17562D9200B697D5 /* UserDefaultsManager.h */,
@@ -365,10 +383,14 @@
 				81799788175394F300D79379 /* main.m in Sources */,
 				817997A2175395DD00D79379 /* ModelInterface.m in Sources */,
 				817997A51753992800D79379 /* ControllerInterface.m in Sources */,
-				817997A917539EB200D79379 /* DateTimeManager.m in Sources */,
 				81299D9E175623E500B697D5 /* ConnectionManager.m in Sources */,
 				81299DBB175628BF00B697D5 /* ConnectionConstants.m in Sources */,
 				81299DBE17562D9300B697D5 /* UserDefaultsManager.m in Sources */,
+				81E11A2C1768953A0037ED3A /* CodeConstants.m in Sources */,
+				81E11A2F176895C70037ED3A /* ColorCodeConsants.m in Sources */,
+				81E11A35176896740037ED3A /* DatabaseManager.m in Sources */,
+				81E11A38176896900037ED3A /* DateTimeLanguageManager.m in Sources */,
+				81E11A3B176897070037ED3A /* UserDefaultConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

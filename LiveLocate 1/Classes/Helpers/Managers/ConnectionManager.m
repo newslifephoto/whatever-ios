@@ -37,6 +37,17 @@
 
 @implementation ConnectionManager
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.requestToolsIn = [[NSMutableDictionary alloc] init];
+    }
+    return self;
+}
+
+
+#pragma mark - request Method
 - (void)requestToServerWithRpDic:(NSMutableDictionary *)rpDict
                   andRequestName:(NSString *)requestName_
                    andProcessKey:(NSString *)processKey
@@ -51,9 +62,9 @@
     [NSJSONSerialization dataWithJSONObject:rpDict
                                     options:NSJSONWritingPrettyPrinted
                                       error:nil];
-    NSString * requestProcessString = [[NSString alloc] initWithData:JSONFromRequestProcess
-                                                            encoding:NSUTF8StringEncoding
-                                       ];
+    NSString * requestProcessString = [[NSString alloc]
+                                       initWithData:JSONFromRequestProcess
+                                           encoding:NSUTF8StringEncoding];
     NSString * rpStr = [NSString stringWithFormat:@"pk=%@&rp=%@&uk=%@&sk=%@"
                         ,processKey
                         ,requestProcessString
@@ -85,6 +96,8 @@
     [requestToolIn setObject:[NSNumber numberWithInt:1] forKey:kTimeToRequest];
 }
 
+
+#pragma mark - Factory Method
 - (NSMutableDictionary *)requestToolsFactoryWithRequestName:(NSString *)
   requestName
 {
@@ -92,15 +105,17 @@
     {
         self.requestToolsIn = [[NSMutableDictionary alloc] init];
     }
-    NSMutableDictionary * requestToolsIn_ = [self.requestToolsIn objectForKey:requestName];
+    NSMutableDictionary * requestToolsIn_ = [self.requestToolsIn
+                                             objectForKey:requestName];
     if(!requestToolsIn_)
     {
-        NSMutableDictionary * newRequestToolsIn = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary * newRequestToolsIn = [[NSMutableDictionary alloc]
+                                                   init];
         NSMutableData * responseData_ = [[NSMutableData alloc] init];
-        NSMutableDictionary * dictResponse_ = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary * dictResponse_ = [[NSMutableDictionary alloc]
+                                               init];
         NSString * uuid_ = [self uuid];
         [newRequestToolsIn setObject:responseData_ forKey:kResponseData];
-        //[newRequestToolsIn setObject:requestConn_ forKey:REQUEST_CONN];
         [newRequestToolsIn setObject:dictResponse_ forKey:kResponseIn];
         [newRequestToolsIn setObject:requestName forKey:kRequestName];
         [newRequestToolsIn setObject:uuid_ forKey:kUniqueID];
@@ -111,9 +126,167 @@
         return  requestToolsIn_;
     }
     return  requestToolsIn_;
+}
+
+-(NSDictionary *)requestToolsFactoryWithRequestName:(NSString *)requestName
+                               andRequestConnection:(NSURLConnection *)
+                               requestConn_
+{
+    NSDictionary * requestToolsIn_ =
+    [self.requestToolsIn objectForKey:requestName];
+    if(!requestToolsIn_)
+    {
+        NSMutableDictionary * newRequestToolsIn = [[NSMutableDictionary alloc]
+                                                   init];
+        NSMutableData * responseData_ = [[NSMutableData alloc] init];
+        NSMutableDictionary * dictResponse_ = [[NSMutableDictionary alloc]
+                                               init];
+        [newRequestToolsIn setObject:responseData_ forKey:kResponseData];
+        [newRequestToolsIn setObject:requestConn_ forKey:kRequestConnection];
+        [newRequestToolsIn setObject:dictResponse_ forKey:kResponseIn];
+    }else
+    {
+        return  requestToolsIn_;
+    }
+    return  requestToolsIn_;
+}
+
+-(NSMutableDictionary *)requestToolsFactoryWithRequestConnection
+ :(NSURLConnection *)requestConn_
+{
+    NSArray * keyConnection = [self.requestToolsIn allKeys];
+    for (NSString * key in keyConnection) {
+        NSMutableDictionary * requestToolIn = [self.requestToolsIn
+                                               objectForKey:key];
+        NSURLConnection* requestConnInDict = [requestToolIn
+                                              objectForKey:kRequestConnection];
+        if(requestConnInDict == requestConn_)
+        {
+            return requestToolIn;
+        }
+    }
+    return nil;
+}
+
+#pragma mark -
+#pragma mark Response Method
+-(void)connection:(NSURLConnection*)connection didReceiveData:(NSData *)data
+{
+    NSMutableDictionary * requestToolIn =
+    [self requestToolsFactoryWithRequestConnection:connection];
+    NSMutableData* responseData_ = [requestToolIn objectForKey:@"responseData"];
+    if(!responseData_)
+    {
+        [requestToolIn setObject:[[NSMutableData alloc] init]
+                          forKey:@"responseData"];
+        responseData_ = [requestToolIn objectForKey:@"responseData"];
+    }
+    [responseData_ appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection
+didReceiveResponse:(NSURLResponse *)response
+{
     
 }
 
+-(void)connectionDidFinishLoading:(NSURLConnection*)connection
+{
+    NSMutableDictionary * requestToolIn =
+    [self requestToolsFactoryWithRequestConnection:connection];
+    NSMutableData * responseData_ = [requestToolIn objectForKey:kResponseData];
+    
+    if(responseData_.length != 0)
+    {
+        NSString * requestName = [requestToolIn objectForKey:kRequestName];
+        NSDictionary * dictResponse_ =
+        [NSJSONSerialization JSONObjectWithData:responseData_
+                                        options:NSJSONReadingMutableContainers
+                                          error:nil];
+        if(dictResponse_)
+        {
+            BOOL IsSuccess =
+            !([[dictResponse_ objectForKey:kRequestProcessStatus]
+               intValue] == 0);
+            NSDictionary * dataResponseIn;
+            if(IsSuccess)
+            {
+                if([[dictResponse_ objectForKey:kResponseResult]
+                    isKindOfClass:[NSString class]])
+                {
+                    NSString * stringDataToConvertToJSON =
+                    [dictResponse_ objectForKey:kResponseResult];
+                    if(!(stringDataToConvertToJSON == (id)[NSNull null]))
+                    {
+                        dataResponseIn =
+                        [NSJSONSerialization JSONObjectWithData:
+                         [stringDataToConvertToJSON
+                          dataUsingEncoding:NSUTF8StringEncoding]
+                                                        options:
+                         NSJSONReadingMutableContainers
+                                                          error: nil];
+                    }
+                }else if([[dictResponse_ objectForKey:@"Data"]
+                          isKindOfClass:[NSDictionary class]])
+                {
+                    dataResponseIn = [dictResponse_ objectForKey:@"Data"];
+                }
+                
+                // delegateต
+                [self.delegate requestDidFinishLoadWithDataIn:dataResponseIn
+                                                andRquestName:requestName
+                                         andTransactionStatus:IsSuccess];
+                // delete response data
+                [responseData_ setData:nil];
+                [requestToolIn setObject:[NSNumber numberWithBool:YES]
+                                  forKey:kRequestStatus];
+
+            }
+            else
+            {
+                if([[dictResponse_ objectForKey:kResponseMessage]
+                    isKindOfClass:[NSString class]])
+                {
+                    NSString * stringDataToConvertToJSON =
+                    [dictResponse_ objectForKey:kResponseMessage];
+                    if(!(stringDataToConvertToJSON == (id)[NSNull null]))
+                    {
+                        dataResponseIn =
+                        [NSJSONSerialization JSONObjectWithData:
+                         [stringDataToConvertToJSON
+                          dataUsingEncoding:NSUTF8StringEncoding]
+                                                        options:
+                         NSJSONReadingMutableContainers
+                                                          error: nil];
+                    }
+                }
+                
+                // delegateต
+                [self.delegate requestDidFinishLoadWithDataIn:dataResponseIn
+                                                andRquestName:requestName
+                                         andTransactionStatus:IsSuccess];
+                // delete response data
+                [responseData_ setData:nil];
+                [requestToolIn setObject:[NSNumber numberWithBool:YES]
+                                  forKey:kRequestStatus];
+
+            }
+                        
+        }
+    }
+    
+    
+    // do somthing same everywhere
+}
+
+- (NSCachedURLResponse *)connection:(NSURLConnection *)connection
+                  willCacheResponse:(NSCachedURLResponse *)cachedResponse
+{
+    return nil;
+}
+
+
+#pragma mark - Util Method
 - (NSString *)uuid
 {
     CFUUIDRef uuidRef = CFUUIDCreate(NULL);

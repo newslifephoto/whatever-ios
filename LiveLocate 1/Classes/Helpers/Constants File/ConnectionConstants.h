@@ -15,3 +15,6 @@ extern NSString * const kResponseData;
 extern NSString * const kResponseIn;
 extern NSString * const kRequestName;
 extern NSString * const kUniqueID;
+extern NSString * const kRequestProcessStatus;
+extern NSString * const kResponseResult;
+extern NSString * const kResponseMessage;
