@@ -22,7 +22,16 @@
 		8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81799793175394FA00D79379 /* MainStoryboard.storyboard */; };
 		817997A2175395DD00D79379 /* ModelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A1175395DD00D79379 /* ModelInterface.m */; };
 		817997A51753992800D79379 /* ControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A41753992800D79379 /* ControllerInterface.m */; };
-		817997A917539EB200D79379 /* DateTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A817539EB200D79379 /* DateTimeManager.m */; };
+		81E425C71769F9F500905576 /* CodeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B21769F9F500905576 /* CodeConstants.m */; };
+		81E425C81769F9F500905576 /* ColorCodeConsants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B41769F9F500905576 /* ColorCodeConsants.m */; };
+		81E425C91769F9F500905576 /* ConnectionConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B71769F9F500905576 /* ConnectionConstants.m */; };
+		81E425CA1769F9F500905576 /* ProcessKeyContants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B91769F9F500905576 /* ProcessKeyContants.m */; };
+		81E425CB1769F9F500905576 /* UserDefaultConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425BB1769F9F500905576 /* UserDefaultConstants.m */; };
+		81E425CC1769F9F500905576 /* ConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425BE1769F9F500905576 /* ConnectionManager.m */; };
+		81E425CD1769F9F500905576 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425C01769F9F500905576 /* DatabaseManager.m */; };
+		81E425CE1769F9F500905576 /* DateTimeLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425C21769F9F500905576 /* DateTimeLanguageManager.m */; };
+		81E425CF1769F9F500905576 /* DateTimeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425C41769F9F500905576 /* DateTimeManager.m */; };
+		81E425D01769F9F500905576 /* UserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425C61769F9F500905576 /* UserDefaultsManager.m */; };
 		81F07B441726882700AD4743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B431726882700AD4743 /* UIKit.framework */; };
 		81F07B461726882700AD4743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B451726882700AD4743 /* Foundation.framework */; };
 		81F07B481726882700AD4743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F07B471726882700AD4743 /* CoreGraphics.framework */; };
@@ -41,7 +50,6 @@
 /* Begin PBXFileReference section */
 		8179976C175394DB00D79379 /* LiveLocateAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveLocateAppDelegate.h; sourceTree = "<group>"; };
 		8179976D175394DB00D79379 /* LiveLocateAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveLocateAppDelegate.m; sourceTree = "<group>"; };
-		81799773175394DB00D79379 /* ColorDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDictionary.h; sourceTree = "<group>"; };
 		81799775175394DB00D79379 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
 		81799776175394DB00D79379 /* ColorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorUtils.m; sourceTree = "<group>"; };
 		81799777175394DB00D79379 /* Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Language.h; sourceTree = "<group>"; };
@@ -62,8 +70,27 @@
 		817997A1175395DD00D79379 /* ModelInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInterface.m; sourceTree = "<group>"; };
 		817997A31753992700D79379 /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
 		817997A41753992800D79379 /* ControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInterface.m; sourceTree = "<group>"; };
-		817997A717539EB200D79379 /* DateTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeManager.h; sourceTree = "<group>"; };
-		817997A817539EB200D79379 /* DateTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeManager.m; sourceTree = "<group>"; };
+		81E425B11769F9F500905576 /* CodeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeConstants.h; sourceTree = "<group>"; };
+		81E425B21769F9F500905576 /* CodeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeConstants.m; sourceTree = "<group>"; };
+		81E425B31769F9F500905576 /* ColorCodeConsants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCodeConsants.h; sourceTree = "<group>"; };
+		81E425B41769F9F500905576 /* ColorCodeConsants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorCodeConsants.m; sourceTree = "<group>"; };
+		81E425B51769F9F500905576 /* ColorDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorDictionary.h; sourceTree = "<group>"; };
+		81E425B61769F9F500905576 /* ConnectionConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionConstants.h; sourceTree = "<group>"; };
+		81E425B71769F9F500905576 /* ConnectionConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionConstants.m; sourceTree = "<group>"; };
+		81E425B81769F9F500905576 /* ProcessKeyContants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessKeyContants.h; sourceTree = "<group>"; };
+		81E425B91769F9F500905576 /* ProcessKeyContants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessKeyContants.m; sourceTree = "<group>"; };
+		81E425BA1769F9F500905576 /* UserDefaultConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultConstants.h; sourceTree = "<group>"; };
+		81E425BB1769F9F500905576 /* UserDefaultConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultConstants.m; sourceTree = "<group>"; };
+		81E425BD1769F9F500905576 /* ConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionManager.h; sourceTree = "<group>"; };
+		81E425BE1769F9F500905576 /* ConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionManager.m; sourceTree = "<group>"; };
+		81E425BF1769F9F500905576 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		81E425C01769F9F500905576 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		81E425C11769F9F500905576 /* DateTimeLanguageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeLanguageManager.h; sourceTree = "<group>"; };
+		81E425C21769F9F500905576 /* DateTimeLanguageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeLanguageManager.m; sourceTree = "<group>"; };
+		81E425C31769F9F500905576 /* DateTimeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeManager.h; sourceTree = "<group>"; };
+		81E425C41769F9F500905576 /* DateTimeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeManager.m; sourceTree = "<group>"; };
+		81E425C51769F9F500905576 /* UserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsManager.h; sourceTree = "<group>"; };
+		81E425C61769F9F500905576 /* UserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsManager.m; sourceTree = "<group>"; };
 		81F07B401726882700AD4743 /* LiveLocate 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveLocate 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F07B431726882700AD4743 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		81F07B451726882700AD4743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -136,19 +163,11 @@
 		81799771175394DB00D79379 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				817997A617539E9500D79379 /* Managers */,
-				81799772175394DB00D79379 /* Constants File */,
+				81E425B01769F9F500905576 /* Constants File */,
+				81E425BC1769F9F500905576 /* Managers */,
 				81799774175394DB00D79379 /* Library */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		81799772175394DB00D79379 /* Constants File */ = {
-			isa = PBXGroup;
-			children = (
-				81799773175394DB00D79379 /* ColorDictionary.h */,
-			);
-			path = "Constants File";
 			sourceTree = "<group>";
 		};
 		81799774175394DB00D79379 /* Library */ = {
@@ -237,15 +256,6 @@
 			path = NIBs;
 			sourceTree = "<group>";
 		};
-		817997A617539E9500D79379 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				817997A717539EB200D79379 /* DateTimeManager.h */,
-				817997A817539EB200D79379 /* DateTimeManager.m */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
 		817997AA17539EC300D79379 /* Main Page */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +271,41 @@
 				DCBA723A1764481D00886639 /* MainViewController.m */,
 			);
 			name = "Main Page";
+			sourceTree = "<group>";
+		};
+		81E425B01769F9F500905576 /* Constants File */ = {
+			isa = PBXGroup;
+			children = (
+				81E425B11769F9F500905576 /* CodeConstants.h */,
+				81E425B21769F9F500905576 /* CodeConstants.m */,
+				81E425B31769F9F500905576 /* ColorCodeConsants.h */,
+				81E425B41769F9F500905576 /* ColorCodeConsants.m */,
+				81E425B51769F9F500905576 /* ColorDictionary.h */,
+				81E425B61769F9F500905576 /* ConnectionConstants.h */,
+				81E425B71769F9F500905576 /* ConnectionConstants.m */,
+				81E425B81769F9F500905576 /* ProcessKeyContants.h */,
+				81E425B91769F9F500905576 /* ProcessKeyContants.m */,
+				81E425BA1769F9F500905576 /* UserDefaultConstants.h */,
+				81E425BB1769F9F500905576 /* UserDefaultConstants.m */,
+			);
+			path = "Constants File";
+			sourceTree = "<group>";
+		};
+		81E425BC1769F9F500905576 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				81E425BD1769F9F500905576 /* ConnectionManager.h */,
+				81E425BE1769F9F500905576 /* ConnectionManager.m */,
+				81E425BF1769F9F500905576 /* DatabaseManager.h */,
+				81E425C01769F9F500905576 /* DatabaseManager.m */,
+				81E425C11769F9F500905576 /* DateTimeLanguageManager.h */,
+				81E425C21769F9F500905576 /* DateTimeLanguageManager.m */,
+				81E425C31769F9F500905576 /* DateTimeManager.h */,
+				81E425C41769F9F500905576 /* DateTimeManager.m */,
+				81E425C51769F9F500905576 /* UserDefaultsManager.h */,
+				81E425C61769F9F500905576 /* UserDefaultsManager.m */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		81F07B371726882700AD4743 = {
@@ -401,7 +446,6 @@
 				81799788175394F300D79379 /* main.m in Sources */,
 				817997A2175395DD00D79379 /* ModelInterface.m in Sources */,
 				817997A51753992800D79379 /* ControllerInterface.m in Sources */,
-				817997A917539EB200D79379 /* DateTimeManager.m in Sources */,
 				DCCE102F176435ED009C2664 /* ECSlidingViewController.m in Sources */,
 				DCCE1030176435ED009C2664 /* UIImage+ImageWithUIView.m in Sources */,
 				DCCE103317643859009C2664 /* InitialSlidingViewController.m in Sources */,
@@ -409,6 +453,16 @@
 				DCCE103917643A3D009C2664 /* LeftMenuViewController.m in Sources */,
 				DCCE103C17643A4D009C2664 /* RightMenuViewController.m in Sources */,
 				DCBA723B1764481D00886639 /* MainViewController.m in Sources */,
+				81E425C71769F9F500905576 /* CodeConstants.m in Sources */,
+				81E425C81769F9F500905576 /* ColorCodeConsants.m in Sources */,
+				81E425C91769F9F500905576 /* ConnectionConstants.m in Sources */,
+				81E425CA1769F9F500905576 /* ProcessKeyContants.m in Sources */,
+				81E425CB1769F9F500905576 /* UserDefaultConstants.m in Sources */,
+				81E425CC1769F9F500905576 /* ConnectionManager.m in Sources */,
+				81E425CD1769F9F500905576 /* DatabaseManager.m in Sources */,
+				81E425CE1769F9F500905576 /* DateTimeLanguageManager.m in Sources */,
+				81E425CF1769F9F500905576 /* DateTimeManager.m in Sources */,
+				81E425D01769F9F500905576 /* UserDefaultsManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
