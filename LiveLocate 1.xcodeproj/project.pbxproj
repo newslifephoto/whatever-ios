@@ -22,6 +22,7 @@
 		8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81799793175394FA00D79379 /* MainStoryboard.storyboard */; };
 		817997A2175395DD00D79379 /* ModelInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A1175395DD00D79379 /* ModelInterface.m */; };
 		817997A51753992800D79379 /* ControllerInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 817997A41753992800D79379 /* ControllerInterface.m */; };
+		819E96F3176F2A8E009075E7 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 819E96F2176F2A8E009075E7 /* LoginModel.m */; };
 		81E425C71769F9F500905576 /* CodeConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B21769F9F500905576 /* CodeConstants.m */; };
 		81E425C81769F9F500905576 /* ColorCodeConsants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B41769F9F500905576 /* ColorCodeConsants.m */; };
 		81E425C91769F9F500905576 /* ConnectionConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E425B71769F9F500905576 /* ConnectionConstants.m */; };
@@ -73,6 +74,8 @@
 		817997A1175395DD00D79379 /* ModelInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelInterface.m; sourceTree = "<group>"; };
 		817997A31753992700D79379 /* ControllerInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerInterface.h; sourceTree = "<group>"; };
 		817997A41753992800D79379 /* ControllerInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerInterface.m; sourceTree = "<group>"; };
+		819E96F1176F2A8E009075E7 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		819E96F2176F2A8E009075E7 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		81E425B11769F9F500905576 /* CodeConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeConstants.h; sourceTree = "<group>"; };
 		81E425B21769F9F500905576 /* CodeConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeConstants.m; sourceTree = "<group>"; };
 		81E425B31769F9F500905576 /* ColorCodeConsants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorCodeConsants.h; sourceTree = "<group>"; };
@@ -192,6 +195,7 @@
 		81799779175394DB00D79379 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				819E96F4176F2A9A009075E7 /* Login */,
 				817997A0175395DD00D79379 /* ModelInterface.h */,
 				817997A1175395DD00D79379 /* ModelInterface.m */,
 			);
@@ -281,6 +285,15 @@
 				DCBA723A1764481D00886639 /* MainViewController.m */,
 			);
 			name = "Main Page";
+			sourceTree = "<group>";
+		};
+		819E96F4176F2A9A009075E7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				819E96F1176F2A8E009075E7 /* LoginModel.h */,
+				819E96F2176F2A8E009075E7 /* LoginModel.m */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		81E425B01769F9F500905576 /* Constants File */ = {
@@ -485,6 +498,7 @@
 				81E425CF1769F9F500905576 /* DateTimeManager.m in Sources */,
 				81E425D01769F9F500905576 /* UserDefaultsManager.m in Sources */,
 				E7AC4737176F0FA2004A6795 /* LoginViewController.m in Sources */,
+				819E96F3176F2A8E009075E7 /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
