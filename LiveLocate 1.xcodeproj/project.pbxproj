@@ -45,6 +45,9 @@
 		DCCE10361764398B009C2664 /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE10351764398B009C2664 /* MainNavigationViewController.m */; };
 		DCCE103917643A3D009C2664 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE103817643A3D009C2664 /* LeftMenuViewController.m */; };
 		DCCE103C17643A4D009C2664 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCE103B17643A4C009C2664 /* RightMenuViewController.m */; };
+		E7AC4737176F0FA2004A6795 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AC4736176F0FA2004A6795 /* LoginViewController.m */; };
+		E7AC473A176F11E6004A6795 /* orangeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E7AC4738176F11E6004A6795 /* orangeButton.png */; };
+		E7AC473B176F11E6004A6795 /* orangeButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E7AC4739176F11E6004A6795 /* orangeButton@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,10 @@
 		DCCE103817643A3D009C2664 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
 		DCCE103A17643A4C009C2664 /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
 		DCCE103B17643A4C009C2664 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
+		E7AC4735176F0FA2004A6795 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		E7AC4736176F0FA2004A6795 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		E7AC4738176F11E6004A6795 /* orangeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeButton.png; sourceTree = "<group>"; };
+		E7AC4739176F11E6004A6795 /* orangeButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "orangeButton@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +160,7 @@
 		8179976E175394DB00D79379 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7AC4734176F0A9A004A6795 /* Login */,
 				817997AA17539EC300D79379 /* Main Page */,
 				817997A31753992700D79379 /* ControllerInterface.h */,
 				817997A41753992800D79379 /* ControllerInterface.m */,
@@ -237,6 +245,8 @@
 		8179978B175394FA00D79379 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E7AC4738176F11E6004A6795 /* orangeButton.png */,
+				E7AC4739176F11E6004A6795 /* orangeButton@2x.png */,
 				8179978C175394FA00D79379 /* bar_Background.png */,
 				8179978D175394FA00D79379 /* Default-568h@2x.png */,
 				8179978E175394FA00D79379 /* Default.png */,
@@ -368,6 +378,15 @@
 			path = ECSlidingViewController;
 			sourceTree = "<group>";
 		};
+		E7AC4734176F0A9A004A6795 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC4735176F0FA2004A6795 /* LoginViewController.h */,
+				E7AC4736176F0FA2004A6795 /* LoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -430,6 +449,8 @@
 				8179979B175394FA00D79379 /* sample_image_cover.jpg in Resources */,
 				8179979C175394FA00D79379 /* MainStoryboard.storyboard in Resources */,
 				DCBA7238176444DD00886639 /* Justice_in_concert.jpg in Resources */,
+				E7AC473A176F11E6004A6795 /* orangeButton.png in Resources */,
+				E7AC473B176F11E6004A6795 /* orangeButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +484,7 @@
 				81E425CE1769F9F500905576 /* DateTimeLanguageManager.m in Sources */,
 				81E425CF1769F9F500905576 /* DateTimeManager.m in Sources */,
 				81E425D01769F9F500905576 /* UserDefaultsManager.m in Sources */,
+				E7AC4737176F0FA2004A6795 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
